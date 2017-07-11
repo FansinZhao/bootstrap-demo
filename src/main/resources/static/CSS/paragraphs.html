@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body{
+            font-size:x-large;
+        }
+    </style>
+</head>
+<body>
+<h1>段落</h1>
+<!--p段落-->
+<p class="text-left"><code>左对齐</code>设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统。</p>
+<p class="text-center"><code>居中对齐</code>设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统。</p>
+<p class="text-right"><code>右对齐</code>设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统。</p>
+<p class="text-nowrap"><code>超出不换行</code>设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统。设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统。设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统。</p>
+<p class="text-justify"><code><del>text-justify只能在IE生效</del></code>设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统。设置全局 CSS 样式；基本的 HTML 元素均可以通过 class 设置样式并得到增强效果；还有先进的栅格系统。设置全局 CSS 样式；</p>
+<br/>
+<br/>
+
+<!--段落突出-->
+<p>段落正常1</p>
+<p class="lead">段落突出</p>
+<p>段落正常2</p>
+<br/>
+<br/>
+
+<!--大小写-->
+<p class="text-lowercase">小写:Twitter Bootstrap</p>
+<p class="text-uppercase">大写:Twitter Bootstrap</p>
+<p class="text-capitalize">首字母大写:twitter bootstrap</p>
+<br/>
+<br/>
+
+<!--隐藏-->
+<p>下面有一段落隐藏</p>
+<p class="text-hide">你在页面看不见我,但是我依然存在!</p>
+<br/>
+<br/>
+
+<!--段落颜色-->
+<p class="text-muted">.text-muted 柔和</p>
+<p class="text-primary">.text-primary 标准</p>
+<p class="text-success">.text-success 成功</p>
+<p class="text-info">.text-info 通知</p>
+<p class="text-warning">.text-warning 警告</p>
+<p class="text-danger">.text-danger 危险</p>
+<br/>
+<br/>
+
+
+<!--段落颜色-->
+<p class="bg-primary">.bg-primary 背景色 标准</p>
+<p class="bg-success">.bg-success 背景色 成功</p>
+<p class="bg-info">.bg-info 背景色 通知</p>
+<p class="bg-warning">.bg-warning 背景色 警告</p>
+<p class="bg-danger">.bg-danger 背景色 危险</p>
+<br/>
+<br/>
+
+
+<div class="pull-left"><button class="btn btn-primary">按钮</button>任意控件左移</div>
+<br/>
+<div class="pull-right"><button class="btn btn-primary">按钮</button>任意控件右移</div>
+<br/>
+<div class="center-block"><button class="btn btn-primary">按钮</button>任意控件居中???没有效果</div>
+<br/>
+<!--没有效果-->
+<!--<div style="float: right">
+    <div class="clearfix">
+        <button class="btn btn-primary">按钮</button>任意控件右移
+    </div>
+</div>
+<br/>-->
+
+<div class="show">可以显示↓还有一个div已被隐藏</div>
+<div class="hidden">不能显示,被隐藏</div>
+
+<h1 class="text-hide">用图片替换文字
+    <img src="https://static.bootcss.com/www/assets/img/codeguide.png?1498888909031" alt="官方网站 方形" class="img-rounded img-responsive" />
+</h1>
+
+<h1>标签</h1>
+<h1>标题 <span class="label label-default">新</span></h1>
+<h2>标题 <span class="label label-default">新</span></h2>
+<h3>标题 <span class="label label-default">新</span></h3>
+<h4>标题 <span class="label label-default">新</span></h4>
+<h5>标题 <span class="label label-default">新</span></h5>
+<h6>标题 <span class="label label-default">新</span></h6>
+<h1>标签颜色</h1>
+<span class="label label-default">默认</span>
+<span class="label label-primary">基本</span>
+<span class="label label-success">成功</span>
+<span class="label label-info">通知</span>
+<span class="label label-warning">警告</span>
+<span class="label label-danger">错误</span>
+<h1>徽章</h1>
+<a href="#">收件箱 <span class="badge">42</span></a>
+<br/>
+<br/>
+<button class="btn btn-primary" type="button">
+    消息 <span class="badge">4</span>
+</button>
+<br/>
+<br/>
+
+<h1>警告框</h1>
+<div class="alert alert-success" role="alert">
+    <strong>Well done!</strong> You successfully read this important alert message.
+</div>
+<div class="alert alert-info" role="alert">
+    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+<div class="alert alert-warning" role="alert">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+<div class="alert alert-danger" role="alert">
+    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+
+<h1>可以关闭的警告框</h1>
+<div class="alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+
+<h1>带链接的警告</h1>
+<div class="alert alert-success" role="alert">
+    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+</div>
+<div class="alert alert-info" role="alert">
+    <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+</div>
+<div class="alert alert-warning" role="alert">
+    <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+</div>
+<div class="alert alert-danger" role="alert">
+    <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

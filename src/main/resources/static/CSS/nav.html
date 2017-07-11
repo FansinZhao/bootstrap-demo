@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <!--<link href="/css/bootstrap.css" rel="stylesheet">-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<br/>
+<br/>
+<h1>胶囊式标签页</h1>
+<ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#">主页</a></li>
+    <li role="presentation"><a href="#">简介</a></li>
+    <li role="presentation"><a href="#">消息</a></li>
+</ul>
+<br/>
+<br/>
+<ul class="nav nav-pills nav-justified">
+    <li role="presentation" class="active"><a href="#">主页</a></li>
+    <li role="presentation"><a href="#">简介</a></li>
+    <li role="presentation"><a href="#">消息</a></li>
+</ul>
+<br/>
+<br/>
+<ul class="nav nav-pills">
+    <li role="presentation"  class="active" ><a href="#">主页</a></li>
+    <li role="presentation" ><a href="#">简介</a></li>
+    <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            下拉菜单 <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">js</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">java</a></li>
+        </ul>
+    </li>
+</ul>
+<br/>
+<br/>
+<ul class="nav nav-pills nav-stacked">
+    <li role="presentation" class="active"><a href="#">主页</a></li>
+    <li role="presentation"><a href="#">简介</a></li>
+    <li role="presentation"><a href="#">消息</a></li>
+</ul>
+
+<h1>tabs标签页</h1>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active" ><a href="#">主页</a></li>
+    <li role="presentation" class="disabled"><a href="#">简介</a></li>
+    <li role="presentation" class="disabled"><a href="#">消息</a></li>
+</ul>
+<br/>
+<br/>
+<ul class="nav nav-justified">
+    <li role="presentation" class="active" ><a href="#">主页</a></li>
+    <li role="presentation" ><a href="#">简介</a></li>
+    <li role="presentation" ><a href="#">消息</a></li>
+</ul>
+<br/>
+<br/>
+<ul class="nav nav-tabs">
+    <li role="presentation"  class="active" ><a href="#">主页</a></li>
+    <li role="presentation" ><a href="#">简介</a></li>
+    <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            下拉菜单 <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">js</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">java</a></li>
+        </ul>
+    </li>
+</ul>
+
+<h1>导航条</h1>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LOG</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">主页 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">标签1</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">js</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">java</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="你想知道什么?">
+                </div>
+                <button type="submit" class="btn btn-default">提交</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">操作</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">js</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">java</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LOG</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">主页 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">标签1</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">js</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">java</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="你想知道什么?">
+                </div>
+                <button type="submit" class="btn btn-primary">提交</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">操作</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">js</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">java</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">顶部导航条</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">主页 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">标签1</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">js</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">java</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="你想知道什么?">
+                </div>
+                <button type="submit" class="btn btn-default">提交</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">操作</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">js</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">java</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LOG</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">主页 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">标签1</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">js</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">java</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="你想知道什么?">
+                </div>
+                <button type="submit" class="btn btn-default">提交</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">操作</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉菜单 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">js</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">java</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--品牌log-->
+<h1>品牌log</h1>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" width="20" height="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAB+0lEQVR4AcyYg5LkUBhG+1X2PdZGaW3btm3btm3bHttWrPomd1r/2Jn/VJ02TpxcH4CQ/dsuazWgzbIdrm9dZVd4pBz4zx2igTaFHrhvjneVXNHCSqIlFEjiwMyyyOBilRgGSqLNF1jnwNQdIvAt48C3IlBmHCiLQHC2zoHDu6zG1iXn6+y62ScxY9AODO6w0pvAqf23oSE4joOfH6OxfMoRnoGUm+de8wykbFt6wZtA07QwtNOqKh3ZbS3Wzz2F+1c/QJY0UCJ/J3kXWJfv7VhxCRRV1jGw7XI+gcO7rEFFRvdYxydwcPsVsC0bQdKScngt4iUTD4Fy/8p7PoHzRu1DclwmgmiqgUXjD3oTKHbAt869qdJ7l98jNTEblPTkXMwetpvnftA0LLHb4X8kiY9Kx6Q+W7wJtG0HR7fdrtYz+x7iya0vkEtUULIzCjC21wY+W/GYXusRH5kGytWTLxgEEhePPwhKYb7EK3BQuxWwTBuUkd3X8goUn6fMHLyTT+DCsQdAEXNzSMeVPAJHdF2DmH8poCREp3uwm7HsGq9J9q69iuunX6EgrwQVObjpBt8z6rdPfvE8kiiyhsvHnomrQx6BxYUyYiNS8f75H1w4/ISepDZLoDhNJ9cdNUquhRsv+6EP9oNH7Iff2A9g8h8CLt1gH0Qf9NMQAFnO60BJFQe0AAAAAElFTkSuQmCC">
+            </a>
+        </div>
+    </div>
+</nav>
+<br/>
+<br/>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">主页</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+            <button type="button" class="btn btn-primary navbar-btn">登录</button>
+        </div>
+    </div>
+</nav>
+<br/>
+<br/>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">主页</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+            <p class="navbar-text">登录</p>
+        </div>
+    </div>
+</nav>
+<br/>
+<br/>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">主页</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+            <p class="navbar-text navbar-right">登录  <a href="#" class="navbar-link">用户链接</a></p>
+        </div>
+    </div>
+</nav>
+<br/>
+<br/>
+<nav class="navbar navbar-default navbar-static-top">
+    <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+<br/>
+<br/>
+<h1>路径导航</h1>
+<ol class="breadcrumb">
+    <li class="active">主页</li>
+</ol>
+<ol class="breadcrumb">
+    <li><a href="#">主页</a></li>
+    <li class="active">库</li>
+</ol>
+<ol class="breadcrumb">
+    <li><a href="#">主页</a></li>
+    <li><a href="#">库</a></li>
+    <li class="active">数据</li>
+</ol>
+<h1>分页演示</h1>
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li>
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li class="disabled">
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<h1>使用span替换a</h1>
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li class="disabled">
+            <span aria-hidden="true">&laquo;</span>
+        </li>
+        <li class="active"><span>1 <span class="sr-only">(current)</span></span></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<nav aria-label="Page navigation">
+    <ul class="pagination pagination-lg">
+        <li class="disabled">
+            <span aria-hidden="true">&laquo;</span>
+        </li>
+        <li class="active"><span>1 <span class="sr-only">(current)</span></span></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<nav aria-label="Page navigation">
+    <ul class="pagination pagination">
+        <li class="disabled">
+            <span aria-hidden="true">&laquo;</span>
+        </li>
+        <li class="active"><span>1 <span class="sr-only">(current)</span></span></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<nav aria-label="Page navigation">
+    <ul class="pagination pagination-sm">
+        <li class="disabled">
+            <span aria-hidden="true">&laquo;</span>
+        </li>
+        <li class="active"><span>1 <span class="sr-only">(current)</span></span></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<h1>翻页</h1>
+<nav aria-label="...">
+    <ul class="pager">
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">下一页</a></li>
+    </ul>
+</nav>
+<nav aria-label="...">
+    <ul class="pager">
+        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+        <li class="next"><a href="#">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+</nav>
+<nav aria-label="...">
+    <ul class="pager">
+        <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+        <li class="next"><a href="#">下一页 <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+</nav>
+<h1>标签</h1>
+<h1>标题 <span class="label label-default">新</span></h1>
+<h2>标题 <span class="label label-default">新</span></h2>
+<h3>标题 <span class="label label-default">新</span></h3>
+<h4>标题 <span class="label label-default">新</span></h4>
+<h5>标题 <span class="label label-default">新</span></h5>
+<h6>标题 <span class="label label-default">新</span></h6>
+<h1>标签颜色</h1>
+<span class="label label-default">默认</span>
+<span class="label label-primary">基本</span>
+<span class="label label-success">成功</span>
+<span class="label label-info">通知</span>
+<span class="label label-warning">警告</span>
+<span class="label label-danger">错误</span>
+<h1>徽章</h1>
+<a href="#">收件箱 <span class="badge">42</span></a>
+<br/>
+<br/>
+<button class="btn btn-primary" type="button">
+    消息 <span class="badge">4</span>
+</button>
+<br/>
+<br/>
+<ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active"><a href="#">主页 <span class="badge">42</span></a></li>
+    <li role="presentation"><a href="#">简介</a></li>
+    <li role="presentation"><a href="#">消息 <span class="badge">3</span></a></li>
+</ul>
+
+<h1>超大屏幕演示</h1>
+<div class="jumbotron">
+    <h1>Hello, world!(ctr+shif+F9刷新修改页面)</h1>
+    <p>
+        演示超大屏幕(jumbotron)样式
+    </p>
+    <a href="#" >更多内容>></a>
+</div>
+<br/>
+<br/>
+<div class="well">well 根据页面微调大小 默认大小</div>
+<div class="well well-lg">well 根据页面微调大小 大</div>
+<div class="well well-sm">well 根据页面微调大小 小</div>
+
+
+<br/>
+<br/>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <!--<link href="/css/bootstrap.css" rel="stylesheet">-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8">
+<h1>表格</h1>
+<h2>基础表格</h2>
+<!--表格-->
+<form role="form">
+    <div class="form-group">
+        <label for="exampleInputEmail1">邮箱地址</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请填入邮箱地址">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">密码</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">文件选择</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">帮助提示</p>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> 记住密码
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">登录</button>
+</form>
+<h2>禁止所有输入 <code>&lt;fieldset&gt;&lt;/fieldset&gt;</code></h2>
+<form role="form">
+    <fieldset disabled>
+        <legend>
+            <div class="form-group">
+                <label for="exampleInputText">解禁文本</label>
+                <input type="text" class="form-control" id="exampleInputText" placeholder="可以通过legend解禁">
+            </div>
+        </legend>
+        <div class="form-group">
+            <label for="exampleInputEmail1">邮箱地址</label>
+            <input type="email" class="form-control" id="exampleInputEmail10" placeholder="请填入邮箱地址">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">密码</label>
+            <input type="password" class="form-control" id="exampleInputPassword10" placeholder="密码">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">文件选择</label>
+            <input type="file" id="exampleInputFile0">
+            <p class="help-block">帮助提示</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> 记住密码
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">登录</button>
+    </fieldset>
+</form>
+
+<h2>内联表格</h2>
+<!--表格-->
+<form role="form" class="form-inline">
+    <div class="form-group">
+        <label for="exampleInputEmail2">邮箱地址</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="请填入邮箱地址">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword2">密码</label>
+        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="密码">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> 记住密码
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">登录</button>
+</form>
+
+
+<h2>内联表格(.sr-only隐藏标签)</h2>
+<!--表格-->
+<form role="form" class="form-inline">
+    <div class="form-group">
+        <label for="exampleInputEmail1" class="sr-only">邮箱地址</label>
+        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="请填入邮箱地址">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1" class="sr-only">密码</label>
+        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="密码">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> 记住密码
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">登录</button>
+</form>
+<h2>静态控件.form-control-static</h2>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <p class="form-control-static">email@example.com</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+    </div>
+</form>
+<br/>
+<form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only">Email</label>
+        <p class="form-control-static">email@example.com</p>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword2" class="sr-only">Password</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-default">身份确认</button>
+</form>
+
+<h1>水平表单 利用12格栅格布局</h1>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="邮箱">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> 记住我
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">登录</button>
+        </div>
+    </div>
+</form>
+
+<h1>表单控件 .input-group</h1>
+<form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="exampleInputAmount">美元</label>
+        <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="金额">
+            <div class="input-group-addon">.00</div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">付款</button>
+</form>
+<br/>
+<div class="bs-example" data-example-id="text-form-control-disabled">
+    <form>
+        <input class="form-control" id="disabledInput" type="text" placeholder="禁止输入" disabled="disabled">
+    </form>
+</div>
+<br/>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">主页</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="查找什么?">
+                </div>
+                <button type="submit" class="btn btn-default">提交</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<br/>
+<h1>单独控件使用</h1>
+<h1>输入文本框(配合label)</h1>
+<input type="text" class="form-control" placeholder="文本输入"/><br/>
+<input type="text" class="form-control" placeholder="文本输入只读" readonly/><br/>
+
+<label for="inputHelpBlock">带有帮助提示的文本</label>
+<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock"/>
+<span id="helpBlock" class="help-block">我是一个文本帮助块</span>
+<br/>
+
+<div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="用户名" aria-describedby="basic-addon1"/>
+</div>
+<br/>
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="用户名" aria-describedby="basic-addon2"/>
+    <span class="input-group-addon" id="basic-addon2">@email.com</span>
+</div>
+<br/>
+<div class="input-group">
+    <span class="input-group-addon" id="basic-addon30">$</span>
+    <input type="text" class="form-control" placeholder="金额数值" aria-label="金额"/>
+    <span class="input-group-addon" id="basic-addon31">.00</span>
+</div>
+<br/>
+<label for="your-url">你的网站</label>
+<div class="input-group">
+    <span class="input-group-addon" id="basic-addon4">https://yourwebsite.com</span>
+    <input type="text" class="form-control" id="your-url" aria-describedby="basic-addon4"/>
+</div>
+<br/>
+<div class="input-group input-group-lg">
+    <span class="input-group-addon" id="size-lg-addon1">@</span>
+    <input type="text" class="form-control" placeholder="用户名 大" aria-describedby="size-lg-addon1"/>
+</div>
+<br/>
+<div class="input-group">
+    <span class="input-group-addon" id="size-basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="用户名 正常" aria-describedby="size-basic-addon1"/>
+</div>
+<br/>
+<div class="input-group input-group-sm">
+    <span class="input-group-addon" id="size-sm-addon1">@</span>
+    <input type="text" class="form-control" placeholder="用户名 小" aria-describedby="size-sm-addon1"/>
+</div>
+<br/>
+<div class="input-group">
+    <span class="input-group-addon">
+        <input type="checkbox" aria-describedby="复选框"/>同意
+    </span>
+    <input type="text" class="form-control" aria-label="带复选框的文本" placeholder="带复选框的文本"/>
+</div>
+<br/>
+<div class="input-group">
+    <span class="input-group-addon">
+        <input type="radio" name="sex" aria-describedby="单选框"/>男
+        <input type="radio" name="sex" aria-describedby="单选框"/>女
+    </span>
+    <span class="input-group-addon">
+        <input type="radio" name="career" aria-describedby="单选框"/>IT
+        <input type="radio" name="career" aria-describedby="单选框"/>前台
+    </span>
+    <input type="text" class="form-control" aria-label="带单选框的文本" placeholder="带单选框的文本"/>
+</div>
+<br/>
+<div class="input-group">
+    <span class="input-group-btn">
+        <button class="btn btn-default" type="button">搜索</button>
+    </span>
+    <input type="text" class="form-control" placeholder="搜索....."/>
+</div>
+<br/>
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="搜索....."/>
+    <span class="input-group-btn">
+        <button class="btn btn-default" type="button">搜索</button>
+    </span>
+</div>
+<br/>
+<mark>注意是<strong>caret</strong>而不是<del>cite</del>:
+    <br/>
+    <pre>
+        &lt;span class="caret"&gt;&lt/span&gt;
+    </pre>
+</mark>
+<br/>
+<div class="input-group">
+    <div class="input-group-btn">
+        <button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">请选择<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">js</a></li>
+            <li class="divider" role="separator"></li>
+            <li><a href="#"><java></java></a></li>
+        </ul>
+    </div>
+    <input type="text" class="form-control" placeholder="为什么?"/>
+</div>
+<br/>
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="为什么?"/>
+    <div class="input-group-btn">
+        <button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">请选择<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">js</a></li>
+            <li class="divider" role="separator"></li>
+            <li><a href="#"><java></java></a></li>
+        </ul>
+    </div>
+</div>
+
+<br/>
+<div class="input-group">
+    <div class="input-group-btn">
+        <button type="button" class="btn btn-default">请选择</button>
+        <button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span><span class="sr-only">请选择</span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">js</a></li>
+            <li class="divider" role="separator"></li>
+            <li><a href="#"><java></java></a></li>
+        </ul>
+    </div>
+    <input type="text" class="form-control" placeholder="分列式下拉菜单"/>
+</div>
+<br/>
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="分列式下拉菜单"/>
+    <div class="input-group-btn">
+        <button type="button" class="btn btn-default">请选择</button>
+        <button  type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span><span class="sr-only">请选择</span></button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">js</a></li>
+            <li class="divider" role="separator"></li>
+            <li><a href="#"><java></java></a></li>
+        </ul>
+    </div>
+</div>
+<br/>
+<div class="input-group">
+    <div class="input-group-btn">
+        <button type="button" class="btn btn-default" aria-label="Bold"><span class="glyphicon glyphicon-bold"></span></button>
+        <button type="button" class="btn btn-default" aria-label="Italic"><span class="glyphicon glyphicon-italic"></span></button>
+    </div>
+    <input type="text" class="form-control" aria-label="多标签输入框" placeholder="多标签输入框">
+</div>
+<br/>
+<div class="input-group">
+    <input type="text" class="form-control" aria-label="多标签输入框" placeholder="多标签输入框">
+    <div class="input-group-btn">
+        <button type="button" class="btn btn-default" aria-label="Help"><span class="glyphicon glyphicon-question-sign"></span></button>
+        <button type="button" class="btn btn-default">操作</button>
+    </div>
+</div>
+
+<br/>
+<h1>多选框</h1>
+<mark>复选框和单选框需要用div和label包围</mark>
+<div class="checkbox">
+    <label>
+        <input type="checkbox"/>html
+    </label>
+</div>
+<div class="checkbox disabled">
+    <label>
+        <input type="checkbox"/>看着不可选,但是能选择,选择试一下css
+    </label>
+</div>
+<div class="checkbox disabled">
+    <label>
+        <input type="checkbox" disabled/>真正的不可选css
+    </label>
+</div>
+<br/>
+<div class="checkbox">
+    <label>
+        <input type="checkbox" id="blankCheckbox" value="option1" title="空白复选框" aria-label="空白复选框">
+    </label>
+</div>
+<br/>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox1" value="option1"> 内联多选1
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox2" value="option2"> 内联多选2
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox3" value="option3"> 内联多选3
+</label>
+
+<br/>
+<h1>单选框</h1>
+<mark>复选框和单选框需要用div和label包围</mark>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios"/>html
+    </label>
+</div>
+<div class="radio disabled">
+    <label>
+        <input type="radio" name="optionsRadios"/>看着不可选,但是能选择,选择试一下css
+    </label>
+</div>
+<div class="radio disabled">
+    <label>
+        <input type="radio" disabled name="optionsRadios"/>真正的不可选css
+    </label>
+</div>
+<br/>
+<div class="radio">
+    <label>
+        <input type="radio" id="blankRadio" name="optionsRadios1" value="option1" title="空白单选框" aria-label="空白单选框">
+    </label>
+</div>
+<br/>
+<label class="radio-inline">
+    <input type="radio" id="inlineRadio1" name="optionsRadios2" value="option1"> 内联单选1
+</label>
+<label class="radio-inline">
+    <input type="radio" id="inlineRadio2" name="optionsRadios2" value="option2"> 内联单选2
+</label>
+<label class="radio-inline">
+    <input type="radio" id="inlineRadio3" name="optionsRadios2" value="option3"> 内联单选3
+</label>
+
+<br/>
+<h1>下拉框</h1>
+<select class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+<br>
+<select multiple class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+<br/>
+<div class="dropdown clearfix">
+    <button type="button" class="btn btn-default dropdown-toggle" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        下拉菜单
+        <!--caret 下三角-->
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownId1">
+        <li><a href="#">选项1</a></li>
+        <li><a href="#">选项2</a></li>
+        <li ><a href="#">选项3</a></li>
+        <li class="divider" role="separator"></li>
+        <li><a href="#">选项4</a></li>
+    </ul>
+</div>
+<br/>
+<div class="dropdown clearfix">
+    <button type="button" class="btn btn-default dropdown-toggle" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        不能选择下拉菜单
+        <!--caret 下三角-->
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownId1">
+        <li><a href="#">选项1</a></li>
+        <li><a href="#">选项2</a></li>
+        <li class="disabled"><a href="#">不能选择的选项3</a></li>
+        <li class="divider" role="separator"></li>
+        <li><a href="#">选项4</a></li>
+    </ul>
+</div>
+<br/>
+<div class="btn-toolbar" role="toolbar">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">下拉菜单(靠右对齐)下拉菜单</button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div><!-- /btn-group -->
+</div>
+<br/>
+<div class="btn-toolbar" role="toolbar">
+    <div class="btn-group dropup">
+        <button type="button" class="btn btn-default">向上弹出式菜单</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div><!-- /btn-group -->
+    <div class="btn-group dropup">
+        <button type="button" class="btn btn-primary">向上弹出式菜单(靠右对齐)</button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div><!-- /btn-group -->
+</div>
+<br/>
+<div class="dropdown clearfix">
+    <button type="button" class="btn btn-default dropdown-toggle" id="dropdownId1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        下拉菜单
+        <!--caret 下三角-->
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownId1">
+        <li class="dropdown-header">选项头</li>
+        <li><a href="#">选项1</a></li>
+        <li><a href="#">选项2</a></li>
+        <li><a href="#">选项3</a></li>
+        <li class="divider" role="separator"></li>
+        <li><a href="#">选项4</a></li>
+    </ul>
+</div>
+
+<br/>
+<h1>文本域</h1>
+<textarea class="form-control" rows="3">文本域</textarea>
+
+<h1>表单验证</h1>
+<div class="form-group has-success">
+    <label class="control-label" for="inputSuccess1">输入成功 .has-success</label>
+    <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+    <span id="helpBlock2" class="help-block">成功提示!</span>
+</div>
+<div class="form-group has-warning">
+    <label class="control-label" for="inputWarning1">输入警告 .has-warning</label>
+    <input type="text" class="form-control" id="inputWarning1">
+</div>
+<div class="form-group has-error">
+    <label class="control-label" for="inputError1">输入错误 .has-error</label>
+    <input type="text" class="form-control" id="inputError1">
+</div>
+<div class="has-success">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" id="checkboxSuccess" value="option1">
+            多选成功
+        </label>
+    </div>
+</div>
+<div class="has-warning">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" id="checkboxWarning" value="option1">
+            多选警告
+        </label>
+    </div>
+</div>
+<div class="has-error">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" id="checkboxError" value="option1">
+            多选错误
+        </label>
+    </div>
+</div>
+<br/>
+
+<div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputSuccess2">输入成功 .has-success</label>
+    <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span id="inputSuccess2Status" class="sr-only">(success)</span>
+</div>
+<div class="form-group has-warning has-feedback">
+    <label class="control-label" for="inputWarning2">输入警告 .has-warning</label>
+    <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+    <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+    <span id="inputWarning2Status" class="sr-only">(warning)</span>
+</div>
+<div class="form-group has-error has-feedback">
+    <label class="control-label" for="inputError2">输入错误 .has-error</label>
+    <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+    <span id="inputError2Status" class="sr-only">(error)</span>
+</div>
+<div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputGroupSuccess1">输入组成功 .has-success</label>
+    <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+    </div>
+    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+</div>
+
+<h1>has-feedback 添加图标</h1>
+<form class="form-horizontal">
+    <div class="form-group has-success has-feedback">
+        <label class="control-label col-sm-3" for="inputSuccess3">输入正确</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputSuccess3" aria-describedby="inputSuccess3Status">
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            <span id="inputSuccess3Status" class="sr-only">(success)</span>
+        </div>
+    </div>
+    <div class="form-group has-success has-feedback">
+        <label class="control-label col-sm-3" for="inputGroupSuccess2">输入正确</label>
+        <div class="col-sm-9">
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status">
+            </div>
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            <span id="inputGroupSuccess2Status" class="sr-only">(success)</span>
+        </div>
+    </div>
+</form>
+<br/>
+<form class="form-inline">
+    <div class="form-group has-success has-feedback">
+        <label class="control-label col-sm-4" for="inputSuccess4">输入正确</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            <span id="inputSuccess4Status" class="sr-only">(success)</span>
+        </div>
+    </div>
+    <div class="form-group has-success has-feedback">
+        <label class="control-label col-sm-4" for="inputGroupSuccess3">输入正确</label>
+        <div class="col-sm-6">
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status">
+            </div>
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
+        </div>
+    </div>
+</form>
+<br/>
+<div class="form-group has-success has-feedback">
+    <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
+    <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status">
+    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span id="inputSuccess5Status" class="sr-only">(success)</span>
+</div>
+<div class="form-group has-success has-feedback">
+    <label class="control-label sr-only" for="inputGroupSuccess4">Input group with success</label>
+    <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status">
+    </div>
+    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span id="inputGroupSuccess4Status" class="sr-only">(success)</span>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <!--<link href="/css/bootstrap.css" rel="stylesheet">-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<h1>列表</h1>
+<!--列表-->
+<ul>
+    <li>无序列表</li>
+    <li>无序列表</li>
+    <li>无序列表</li>
+</ul>
+<br/>
+<br/>
+<ol>
+    <li>有序列表</li>
+    <li>有序列表</li>
+    <li>有序列表</li>
+</ol>
+<br/>
+<br/>
+<ul>
+    <li>无序列表嵌套</li>
+    <li>无序列表嵌套
+        <ol>
+            <li>有序列表嵌套</li>
+            <li>有序列表嵌套</li>
+            <li>有序列表嵌套</li>
+        </ol>
+    </li>
+    <li>无序列表嵌套</li>
+</ul>
+<br/>
+<br/>
+<ol class="list-unstyled">
+    <li>无样式列表
+        <ul>
+            <li>有序列表</li>
+            <li>有序列表</li>
+            <li>有序列表</li>
+        </ul>
+    </li>
+    <li>无样式列表
+        <ol>
+            <li>有序列表嵌套</li>
+            <li>有序列表嵌套</li>
+            <li>有序列表嵌套</li>
+        </ol>
+    </li>
+    <li>无样式列表</li>
+</ol>
+<br/>
+<br/>
+<ol class="list-inline">
+    <li>内联有序列表 无样式</li>
+    <li>内联有序列表</li>
+    <li>内联有序列表</li>
+</ol>
+<h1>加样式的列表</h1>
+<ul class="list-group">
+    <li class="list-group-item">不要思索,直接回答!</li>
+    <li class="list-group-item list-group-item-text">3,2,1!</li>
+    <li class="list-group-item list-group-item-info">你有后悔的事情么?</li>
+    <li class="list-group-item list-group-item-success">如果没有,恭喜你!你活的很潇洒!</li>
+    <li class="list-group-item list-group-item-warning">不要去想后悔什么,忘记过去,你没有使用的只有未来!</li>
+    <li class="list-group-item list-group-item-danger">一切都是胡言乱语</li>
+</ul>
+<br/>
+<br/>
+<ul class="list-group">
+    <li class="list-group-item">不要思索,直接回答!</li>
+    <li class="list-group-item list-group-item-text">3,2,1!</li>
+    <li class="list-group-item list-group-item-info disabled">你有后悔的事情么?</li>
+    <li class="list-group-item list-group-item-success disabled">如果没有,恭喜你!你活的很潇洒!</li>
+    <li class="list-group-item list-group-item-warning">不要去想后悔什么,忘记过去,你没有使用的只有未来!</li>
+    <li class="list-group-item list-group-item-danger">一切都是胡言乱语</li>
+</ul>
+<br/>
+<br/>
+<ul class="list-group">
+    <li class="list-group-item list-group-item-success">
+        <span class="badge">14</span>
+        放手去做吧
+    </li>
+    <li class="list-group-item list-group-item-info">
+        <span class="badge">24</span>
+        放手去做吧
+    </li>
+    <li class="list-group-item list-group-item-warning">
+        <span class="badge">15</span>
+        放手去做吧
+    </li>
+    <li class="list-group-item list-group-item-danger">
+        <span class="badge">14</span>
+        放手去做吧
+    </li>
+</ul>
+<br/>
+<br/>
+<ul class="list-group">
+    <a href="#" class="list-group-item list-group-item-success active">
+        <span class="badge">14</span>
+        放手去做吧
+    </a>
+    <a href="#" class="list-group-item list-group-item-info">
+        <span class="badge">24</span>
+        放手去做吧
+    </a>
+    <a href="#" class="list-group-item list-group-item-warning">
+        <span class="badge">15</span>
+        放手去做吧
+    </a>
+    <a href="#" class="list-group-item list-group-item-danger">
+        <span class="badge">14</span>
+        放手去做吧
+    </a>
+</ul>
+<br/>
+<br/>
+<div class="list-group">
+    <button href="#" class="list-group-item list-group-item-success active">
+        放手去做吧
+    </button>
+    <button href="#" class="list-group-item list-group-item-info">
+        放手去做吧
+    </button>
+    <button href="#" class="list-group-item list-group-item-warning">
+        放手去做吧
+    </button>
+    <button href="#" class="list-group-item list-group-item-danger">
+        放手去做吧
+    </button>
+</div>
+<br/>
+<br/>
+<div class="list-group">
+    <button href="#" class="list-group-item list-group-item-success active">
+        <h4 class="list-group-item-heading">GO!</h4>
+        <p>放手去做吧</p>
+    </button>
+    <button href="#" class="list-group-item list-group-item-info">
+        <h4 class="list-group-item-heading">GO!</h4>
+        <p>放手去做吧</p>
+    </button>
+    <button href="#" class="list-group-item list-group-item-warning">
+        <h4 class="list-group-item-heading">GO!</h4>
+        <p>放手去做吧</p>
+    </button>
+    <button href="#" class="list-group-item list-group-item-danger">
+        <h4 class="list-group-item-heading">GO!</h4>
+        <p>放手去做吧</p>
+    </button>
+</div>
+<br/>
+<br/>
+<dl>
+    <dt><strong>&lt;dl&gt;:</strong></dt>
+    <dd>描述列表标签</dd>
+    <dt><strong>&lt;dt&gt;:</strong></dt>
+    <dd>描述列表表头</dd>
+    <dt><strong>&lt;dd&gt;:</strong></dt>
+    <dd>描述列表表格</dd>
+</dl>
+
+<dl class="dl-horizontal">
+    <dt><strong>&lt;dl&gt;:</strong></dt>
+    <dd>描述列表标签</dd>
+    <dt><strong>&lt;dt&gt;:</strong></dt>
+    <dd>描述列表表头</dd>
+    <dt><strong>&lt;dd&gt;:</strong></dt>
+    <dd>描述列表表格</dd>
+</dl>
+
+<h1>表格</h1>
+<h1>1 基础表格</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th>表头1</th>
+        <th>表头2</th>
+        <th>表头3</th>
+        <th>表头4</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    </tbody>
+</table>
+<h1>2 边框表格 不要忘记table 修改了bootstrap .table-bordered 方便查看</h1>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>表头1</th>
+        <th>表头2</th>
+        <th>表头3</th>
+        <th>表头4</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    </tbody>
+</table>
+<h1>3 响应式表格 不要忘记table</h1>
+<table class="table table-responsive">
+    <thead>
+    <tr>
+        <th>表头1</th>
+        <th>表头2</th>
+        <th>表头3</th>
+        <th>表头4</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    </tbody>
+</table>
+<h1>4 鼠标悬浮表格 不要忘记table (需要修改bootstrap .table-hover,否则很难看出来,,,,,)</h1>
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>表头1</th>
+        <th>表头2</th>
+        <th>表头3</th>
+        <th>表头4</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    </tbody>
+</table>
+<h1>5 斑马线表格 不要忘记table (需要修改bootstrap .table-striped,否则很难看出来,,,,,)</h1>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>表头1</th>
+        <th>表头2</th>
+        <th>表头3</th>
+        <th>表头4</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    </tbody>
+</table>
+<h1>6 紧凑型表格 不要忘记table table-condensed(可以使表格更精美)</h1>
+<table class="table table-condensed table-bordered table-responsive table-hover">
+    <thead>
+    <tr>
+        <th>表头1</th>
+        <th>表头2</th>
+        <th>表头3</th>
+        <th>表头4</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    <tr>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+        <td>表格单元格</td>
+    </tr>
+    </tbody>
+</table>
+<h1>表格颜色演示</h1>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>类名</th>
+        <th>描述</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="active">
+        <td>.active</td>
+        <td>表示当前活动的信息</td>
+    </tr>
+    <tr class="success">
+        <td>.success</td>
+        <td>表示成功或者正确的行为</td>
+    </tr>
+    <tr class="info">
+        <td>.info</td>
+        <td>表示中立的信息或行为</td>
+    </tr>
+    <tr class="warning">
+        <td>.warning</td>
+        <td>表示警告，需要特别注意</td>
+    </tr>
+    <tr class="danger">
+        <td>.danger</td>
+        <td>表示危险或者可能是错误的行为</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
